@@ -1,16 +1,16 @@
 const products = [
-  { id: "luna", name: "Luna Shoulder", type: "Shoulder bag", style: "shoulder", color: "blush", colorName: "Dusty blush", price: 245, newest: 12, tone: "blush", bg: "blush", angle: "-4deg", description: "A softly structured shoulder bag with an easy, curved silhouette. Luna keeps the essentials close without ever feeling overdone.", sizes: ["Small", "Regular"], best: true, new: true },
-  { id: "serein", name: "Serein Tote", type: "Tote", style: "tote", color: "olive", colorName: "Sage", price: 295, newest: 11, tone: "olive", bg: "olive", angle: "4deg", description: "Roomy, considered and quietly generous. Serein is the tote that turns a full day into a graceful one.", sizes: ["Regular", "Large"], best: true, new: true },
-  { id: "noa", name: "Noa Mini", type: "Crossbody", style: "crossbody", color: "cocoa", colorName: "Cocoa", price: 185, newest: 10, tone: "cocoa", bg: "cocoa", angle: "-7deg", description: "The little bag with a point of view. Noa carries the essentials in a compact, softly rounded frame.", sizes: ["Mini"], best: false, new: true },
-  { id: "celeste", name: "Céleste Clutch", type: "Clutch", style: "clutch", color: "cream", colorName: "Oat milk", price: 165, newest: 9, tone: "cream", bg: "cream", angle: "3deg", description: "An evening shape with an everyday spirit. Céleste folds neatly into the moments that deserve a little polish.", sizes: ["One size"], best: true, new: false },
-  { id: "mara", name: "Mara Frame", type: "Shoulder bag", style: "shoulder", color: "black", colorName: "Ink", price: 320, newest: 8, tone: "black", bg: "black", angle: "-3deg", description: "A clean frame, a tactile finish and just enough room for your rituals. Mara is made for the hours after dark.", sizes: ["Regular"], best: false, new: false },
-  { id: "alma", name: "Alma Carryall", type: "Tote", style: "tote", color: "tan", colorName: "Toasted almond", price: 340, newest: 7, tone: "tan", bg: "tan", angle: "6deg", description: "Alma is a generous carryall designed to hold the day without losing its shape or its sense of ease.", sizes: ["Large"], best: false, new: false },
-  { id: "iris", name: "Iris Pouch", type: "Clutch", style: "clutch", color: "lilac", colorName: "Dusty lilac", price: 140, newest: 6, tone: "lilac", bg: "lilac", angle: "-5deg", description: "A small, softly padded pouch for evenings that begin with one plan and end somewhere better.", sizes: ["One size"], best: false, new: false },
-  { id: "thea", name: "Théa Crossbody", type: "Crossbody", style: "crossbody", color: "rust", colorName: "Burnt sienna", price: 210, newest: 5, tone: "rust", bg: "rust", angle: "4deg", description: "Théa brings a warm note to the everyday. Wear it close, across, or however the day asks.", sizes: ["Regular"], best: true, new: false },
-  { id: "nella", name: "Nella Soft Tote", type: "Tote", style: "tote", color: "cream", colorName: "Porcelain", price: 270, newest: 4, tone: "cream", bg: "cream", angle: "-4deg", description: "Supple enough to settle in, structured enough to keep up. Nella is a study in balance.", sizes: ["Regular"], best: false, new: false },
-  { id: "ava", name: "Ava Half Moon", type: "Shoulder bag", style: "shoulder", color: "blush", colorName: "Rosewater", price: 230, newest: 3, tone: "blush", bg: "blush", angle: "5deg", description: "A moon-shaped shoulder bag with a soft edge and a surprisingly spacious interior.", sizes: ["Regular"], best: false, new: false },
-  { id: "olive", name: "Olive Envelope", type: "Clutch", style: "clutch", color: "olive", colorName: "Moss", price: 155, newest: 2, tone: "olive", bg: "olive", angle: "-3deg", description: "The finishing touch. Olive slips under your arm with a quiet confidence that never needs to announce itself.", sizes: ["One size"], best: false, new: false },
-  { id: "mila", name: "Mila Day Bag", type: "Crossbody", style: "crossbody", color: "cocoa", colorName: "Espresso", price: 255, newest: 1, tone: "cocoa", bg: "cocoa", angle: "3deg", description: "Mila is the one you reach for without thinking — a polished companion for all the in-between places.", sizes: ["Regular", "Large"], best: false, new: false },
+  { id: "luna", name: "Luna Shoulder", type: "Shoulder bag", style: "shoulder", color: "blush", colorName: "Dusty blush", price: 245, newest: 12, tone: "blush", bg: "blush", image: "assets/bags/luna.jpg", imagePosition: "center", angle: "-4deg", description: "A softly structured shoulder bag with an easy, curved silhouette. Luna keeps the essentials close without ever feeling overdone.", sizes: ["Small", "Regular"], best: true, new: true },
+  { id: "serein", name: "Serein Tote", type: "Tote", style: "tote", color: "olive", colorName: "Sage", price: 295, newest: 11, tone: "olive", bg: "olive", image: "assets/bags/serein.jpg", imagePosition: "center", angle: "4deg", description: "Roomy, considered and quietly generous. Serein is the tote that turns a full day into a graceful one.", sizes: ["Regular", "Large"], best: true, new: true },
+  { id: "noa", name: "Noa Mini", type: "Crossbody", style: "crossbody", color: "cocoa", colorName: "Cocoa", price: 185, newest: 10, tone: "cocoa", bg: "cocoa", image: "assets/bags/noa.jpg", imagePosition: "center", angle: "-7deg", description: "The little bag with a point of view. Noa carries the essentials in a compact, softly rounded frame.", sizes: ["Mini"], best: false, new: true },
+  { id: "celeste", name: "Céleste Clutch", type: "Clutch", style: "clutch", color: "cream", colorName: "Oat milk", price: 165, newest: 9, tone: "cream", bg: "cream", image: "assets/bags/celeste.jpg", imagePosition: "center", angle: "3deg", description: "An evening shape with an everyday spirit. Céleste folds neatly into the moments that deserve a little polish.", sizes: ["One size"], best: true, new: false },
+  { id: "mara", name: "Mara Frame", type: "Shoulder bag", style: "shoulder", color: "black", colorName: "Ink", price: 320, newest: 8, tone: "black", bg: "black", image: "assets/bags/mara.jpg", imagePosition: "center", angle: "-3deg", description: "A clean frame, a tactile finish and just enough room for your rituals. Mara is made for the hours after dark.", sizes: ["Regular"], best: false, new: false },
+  { id: "alma", name: "Alma Carryall", type: "Tote", style: "tote", color: "tan", colorName: "Toasted almond", price: 340, newest: 7, tone: "tan", bg: "tan", image: "assets/bags/alma.jpg", imagePosition: "center", angle: "6deg", description: "Alma is a generous carryall designed to hold the day without losing its shape or its sense of ease.", sizes: ["Large"], best: false, new: false },
+  { id: "iris", name: "Iris Pouch", type: "Clutch", style: "clutch", color: "lilac", colorName: "Dusty lilac", price: 140, newest: 6, tone: "lilac", bg: "lilac", image: "assets/bags/iris.jpg", imagePosition: "center", angle: "-5deg", description: "A small, softly padded pouch for evenings that begin with one plan and end somewhere better.", sizes: ["One size"], best: false, new: false },
+  { id: "thea", name: "Théa Crossbody", type: "Crossbody", style: "crossbody", color: "rust", colorName: "Burnt sienna", price: 210, newest: 5, tone: "rust", bg: "rust", image: "assets/bags/thea.jpg", imagePosition: "center", angle: "4deg", description: "Théa brings a warm note to the everyday. Wear it close, across, or however the day asks.", sizes: ["Regular"], best: true, new: false },
+  { id: "nella", name: "Nella Soft Tote", type: "Tote", style: "tote", color: "cream", colorName: "Porcelain", price: 270, newest: 4, tone: "cream", bg: "cream", image: "assets/bags/nella.jpg", imagePosition: "center", angle: "-4deg", description: "Supple enough to settle in, structured enough to keep up. Nella is a study in balance.", sizes: ["Regular"], best: false, new: false },
+  { id: "ava", name: "Ava Half Moon", type: "Shoulder bag", style: "shoulder", color: "blush", colorName: "Rosewater", price: 230, newest: 3, tone: "blush", bg: "blush", image: "assets/bags/ava.jpg", imagePosition: "center", angle: "5deg", description: "A moon-shaped shoulder bag with a soft edge and a surprisingly spacious interior.", sizes: ["Regular"], best: false, new: false },
+  { id: "olive", name: "Olive Envelope", type: "Clutch", style: "clutch", color: "olive", colorName: "Moss", price: 155, newest: 2, tone: "olive", bg: "olive", image: "assets/bags/olive.jpg", imagePosition: "center", angle: "-3deg", description: "The finishing touch. Olive slips under your arm with a quiet confidence that never needs to announce itself.", sizes: ["One size"], best: false, new: false },
+  { id: "mila", name: "Mila Day Bag", type: "Crossbody", style: "crossbody", color: "cocoa", colorName: "Espresso", price: 255, newest: 1, tone: "cocoa", bg: "cocoa", image: "assets/bags/mila.jpg", imagePosition: "center", angle: "3deg", description: "Mila is the one you reach for without thinking — a polished companion for all the in-between places.", sizes: ["Regular", "Large"], best: false, new: false },
 ];
 
 const state = {
@@ -28,8 +28,8 @@ const money = value => `$${value.toLocaleString("en-US")}`;
 const findProduct = id => products.find(product => product.id === id);
 
 function bagArt(product, extraClass = "") {
-  return `<div class="product-image art-bg-${product.bg} ${extraClass}" data-open-product="${product.id}" style="--angle:${product.angle}">
-    <div class="bag-visual tone-${product.tone}" style="--angle:${product.angle}"><i></i></div>
+  return `<div class="product-image ${extraClass}" data-open-product="${product.id}">
+    <img class="bag-photo" src="${product.image}" alt="${product.name} handbag" loading="lazy" style="object-position:${product.imagePosition || "center"}" />
   </div>`;
 }
 
@@ -77,7 +77,7 @@ function renderProduct(id) {
   state.selectedSize = product.sizes[0];
   state.selectedColor = product.color;
   const detail = $("#product-detail");
-  const gallery = [product, { ...product, angle: "-8deg" }, { ...product, angle: "6deg" }];
+  const gallery = [product, { ...product, imagePosition: "center 35%" }, { ...product, imagePosition: "center 65%" }];
   detail.innerHTML = `<div class="product-detail-grid">
     <div class="product-gallery">${gallery.map((item, index) => bagArt(item, index === 0 ? "product-main-image" : "")).join("")}</div>
     <div class="product-content">
@@ -154,7 +154,7 @@ function renderCheckout() {
   }
   const lines = state.cart.map(item => {
     const product = findProduct(item.id);
-    return `<div class="mini-item"><div><div class="mini-thumb art-bg-${product.bg}"><div class="bag-visual tone-${product.tone}"></div></div><span>${product.name}<br /><small>${item.size} × ${item.quantity}</small></span></div><span>${money(product.price * item.quantity)}</span></div>`;
+    return `<div class="mini-item"><div><div class="mini-thumb"><img class="bag-photo" src="${product.image}" alt="${product.name} handbag" loading="lazy" /></div><span>${product.name}<br /><small>${item.size} × ${item.quantity}</small></span></div><span>${money(product.price * item.quantity)}</span></div>`;
   }).join("");
   summary.innerHTML = `<h3>Your order</h3>${lines}<div class="summary-line"><span>Subtotal</span><span>${money(subtotal)}</span></div><div class="summary-line muted"><span>Delivery</span><span>${subtotal >= 250 ? "Complimentary" : money(12)}</span></div><div class="summary-line summary-total"><strong>Total</strong><strong>${money(subtotal >= 250 ? subtotal : subtotal + 12)}</strong></div>`;
 }
