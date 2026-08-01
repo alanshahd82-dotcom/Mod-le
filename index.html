@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Modèle — a fictional handbag atelier for timeless everyday objects."
+    />
+    <title>Modèle — The Art of Carrying</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement-bar">
+      <p>Complimentary delivery on orders over $250 <span>·</span> A fictional design demo</p>
+    </div>
+
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Modèle home">Modèle</a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#home" data-route="home">Home</a>
+        <a href="#shop" data-route="shop">Shop</a>
+        <a href="#about" data-route="about">Our story</a>
+        <a href="#contact" data-route="contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="header-icon search-toggle" type="button" aria-label="Search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5"></circle><path d="m16 16 5 5"></path></svg>
+        </button>
+        <a class="header-icon cart-trigger" href="#cart" aria-label="Shopping bag">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8.5h13l1 12h-15z"></path><path d="M9 9V6.5a3 3 0 0 1 6 0V9"></path></svg>
+          <span class="cart-count" aria-live="polite">0</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="search-panel" aria-hidden="true">
+      <div class="search-inner">
+        <label for="site-search">Search the collection</label>
+        <div class="search-field">
+          <input id="site-search" type="search" placeholder="Try “Luna” or “crossbody”" autocomplete="off" />
+          <button class="search-submit" type="button">Search</button>
+        </div>
+        <p class="search-note">Search is a demo interaction. Results stay within this fictional collection.</p>
+      </div>
+    </div>
+
+    <div class="mobile-menu" aria-hidden="true">
+      <button class="mobile-close" type="button" aria-label="Close menu">Close</button>
+      <nav aria-label="Mobile navigation">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop all</a>
+        <a href="#about">Our story</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p>Made for the things you carry — and the places you are going.</p>
+    </div>
+
+    <main id="app" class="site-main">
+      <section class="page" data-page="home">
+        <div class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">The spring edit · 2026</p>
+            <h1>Objects of<br /><em>desire.</em></h1>
+            <p class="hero-lede">Quietly confident handbags designed to move through your day with grace.</p>
+            <a class="button button-dark" href="#shop">Explore the collection <span>↗</span></a>
+          </div>
+          <div class="hero-art" role="img" aria-label="Abstract blush and cocoa handbag placeholder">
+            <div class="hero-sun"></div>
+            <div class="hero-bag hero-bag-main"><span></span></div>
+            <div class="hero-bag hero-bag-mini"><span></span></div>
+            <span class="hero-stamp">M<br /><small>no. 01</small></span>
+            <p class="hero-caption">A study in<br />soft structure</p>
+          </div>
+        </div>
+
+        <div class="section-shell intro-strip">
+          <div>
+            <p class="eyebrow">A considered collection</p>
+            <h2>Carry something<br /><em>beautiful.</em></h2>
+          </div>
+          <p class="body-copy">Every Modèle begins with a feeling: a certain proportion, a perfectly quiet detail, a shape that becomes yours over time. Our fictional atelier makes everyday pieces with an unhurried point of view.</p>
+          <a class="text-link" href="#about">Discover our point of view <span>↗</span></a>
+        </div>
+
+        <div class="section-shell product-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Just arrived</p>
+              <h2>New arrivals</h2>
+            </div>
+            <a class="text-link" href="#shop">View all pieces <span>↗</span></a>
+          </div>
+          <div class="product-grid home-grid" data-product-grid="new"></div>
+        </div>
+
+        <div class="editorial-band">
+          <div class="editorial-art art-olive" role="img" aria-label="Sage green abstract handbag placeholder">
+            <div class="editorial-bag"></div>
+            <span class="art-label">The<br />Serein</span>
+          </div>
+          <div class="editorial-copy">
+            <p class="eyebrow">The everyday icon</p>
+            <h2>Designed to<br /><em>stay with you.</em></h2>
+            <p class="body-copy">A good bag does more than hold your things. It holds the rhythm of your life — coffee runs, late trains, long lunches, the small rituals that make a day yours.</p>
+            <a class="button button-outline" href="#shop">Meet the icons <span>↗</span></a>
+          </div>
+        </div>
+
+        <div class="section-shell product-section best-sellers">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">The ones you return to</p>
+              <h2>Best sellers</h2>
+            </div>
+            <a class="text-link" href="#shop">Shop best sellers <span>↗</span></a>
+          </div>
+          <div class="product-grid home-grid" data-product-grid="best"></div>
+        </div>
+      </section>
+
+      <section class="page page-shop" data-page="shop">
+        <div class="page-intro section-shell">
+          <p class="eyebrow">The collection</p>
+          <h1>Find your<br /><em>everyday.</em></h1>
+          <p class="body-copy">Twelve considered shapes, imagined in tactile colorways. Find the piece that feels like it was made for your rhythm.</p>
+        </div>
+        <div class="shop-toolbar section-shell">
+          <button class="filter-trigger" type="button"><span class="filter-icon">☰</span> Filters <span class="filter-active-count"></span></button>
+          <p class="results-count"></p>
+          <label class="sort-label">Sort by
+            <select id="sort-products">
+              <option value="featured">Featured</option>
+              <option value="newest">Newest</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="price-high">Price: high to low</option>
+            </select>
+          </label>
+        </div>
+        <div class="shop-layout section-shell">
+          <aside class="filter-drawer" aria-label="Product filters">
+            <div class="filter-top"><h3>Filter by</h3><button class="filter-close" type="button">Clear all</button></div>
+            <div class="filter-group">
+              <p>Shape</p>
+              <label><input type="checkbox" name="style" value="tote" /> Tote <span>03</span></label>
+              <label><input type="checkbox" name="style" value="shoulder" /> Shoulder bag <span>03</span></label>
+              <label><input type="checkbox" name="style" value="clutch" /> Clutch <span>03</span></label>
+              <label><input type="checkbox" name="style" value="crossbody" /> Crossbody <span>03</span></label>
+            </div>
+            <div class="filter-group">
+              <p>Color</p>
+              <label><input type="checkbox" name="color" value="blush" /> <i class="color-dot blush"></i> Blush</label>
+              <label><input type="checkbox" name="color" value="cocoa" /> <i class="color-dot cocoa"></i> Cocoa</label>
+              <label><input type="checkbox" name="color" value="cream" /> <i class="color-dot cream"></i> Cream</label>
+              <label><input type="checkbox" name="color" value="olive" /> <i class="color-dot olive"></i> Olive</label>
+              <label><input type="checkbox" name="color" value="black" /> <i class="color-dot black"></i> Black</label>
+            </div>
+            <div class="filter-group">
+              <p>Price</p>
+              <label><input type="radio" name="price" value="all" checked /> All prices</label>
+              <label><input type="radio" name="price" value="under-200" /> Under $200</label>
+              <label><input type="radio" name="price" value="200-300" /> $200 — $300</label>
+              <label><input type="radio" name="price" value="over-300" /> Over $300</label>
+            </div>
+          </aside>
+          <div class="catalog-grid" id="catalog-grid"></div>
+        </div>
+      </section>
+
+      <section class="page page-product section-shell" data-page="product">
+        <div id="product-detail"></div>
+      </section>
+
+      <section class="page page-cart section-shell" data-page="cart">
+        <div class="page-title-row">
+          <div><p class="eyebrow">Your edit</p><h1>Your bag <span class="cart-title-count">(0)</span></h1></div>
+          <a class="text-link" href="#shop">Continue shopping <span>↗</span></a>
+        </div>
+        <div id="cart-view"></div>
+      </section>
+
+      <section class="page page-checkout section-shell" data-page="checkout">
+        <div class="checkout-intro"><p class="eyebrow">Almost yours</p><h1>Complete your<br /><em>order.</em></h1></div>
+        <div class="checkout-layout">
+          <form class="checkout-form" id="checkout-form">
+            <div class="form-section"><p class="eyebrow">01 · Your details</p><div class="form-grid">
+              <label>Full name<input name="name" type="text" placeholder="Sofia Example" required /></label>
+              <label>Phone number<input name="phone" type="tel" placeholder="+000 000 000" required /></label>
+            </div></div>
+            <div class="form-section"><p class="eyebrow">02 · Delivery</p><label>Address<input name="address" type="text" placeholder="12 Fictional Avenue" required /></label><div class="form-grid"><label>City<input name="city" type="text" placeholder="Your city" required /></label><label>Postcode<input name="postcode" type="text" placeholder="00000" required /></label></div></div>
+            <div class="form-section"><p class="eyebrow">03 · Notes <span>(optional)</span></p><label>Anything we should know?<textarea name="notes" rows="3" placeholder="A gift note, delivery preference..."></textarea></label></div>
+            <button class="button button-dark wide-button" type="submit">Confirm demo order <span>↗</span></button>
+            <p class="demo-note">This is a fictional checkout for presentation purposes. No payment is processed and no message will be sent.</p>
+          </form>
+          <div class="checkout-summary" id="checkout-summary"></div>
+        </div>
+      </section>
+
+      <section class="page page-about" data-page="about">
+        <div class="about-hero section-shell"><p class="eyebrow">Our story</p><h1>The art of<br /><em>the everyday.</em></h1><div class="about-hero-art art-cocoa"><div class="large-bag"></div><span>Made up,<br />made well.</span></div></div>
+        <div class="section-shell about-copy"><p class="eyebrow">A fictional atelier, with a real point of view</p><h2>We believe the things<br />you carry should <em>matter.</em></h2><div class="about-columns"><p class="body-copy">Modèle began as an imagined answer to a familiar question: why can an everyday object not also be a beautiful one? We design with the belief that a handbag is not a season, but a companion. Something that gathers a little patina, a few stories, and becomes more yours with every use.</p><p class="body-copy">Our collection is fictional, but our intention is simple — to make thoughtful shapes in expressive, lasting color. Pieces that feel considered without feeling precious. Quiet enough for every day, distinct enough to be remembered.</p></div></div>
+        <div class="values-row"><div><span>01</span><h3>Slow<br /><em>attention</em></h3><p>We leave room for the details to speak.</p></div><div><span>02</span><h3>Useful<br /><em>beauty</em></h3><p>Form follows the life you actually lead.</p></div><div><span>03</span><h3>Made to<br /><em>linger</em></h3><p>A good object should grow more familiar.</p></div></div>
+      </section>
+
+      <section class="page page-contact section-shell" data-page="contact">
+        <div class="contact-head"><p class="eyebrow">Come say hello</p><h1>Let’s keep<br /><em>in touch.</em></h1><p class="body-copy">Whether you have a question about a fictional bag or simply want to share a thought, our imaginary studio would love to hear from you.</p></div>
+        <div class="contact-layout"><div class="contact-details"><p class="eyebrow">Studio hours</p><p>Monday — Friday<br />09:00 — 17:00</p><p class="eyebrow">Write to us</p><p>hello@modele-demo.example<br />+000 000 000</p><a href="#contact" class="button button-dark demo-contact">Message on WhatsApp <span>↗</span></a><small>Demo button · no message will be sent</small></div><form class="contact-form" id="contact-form"><label>Your name<input type="text" placeholder="Sofia Example" required /></label><label>Your email<input type="email" placeholder="sofia@example.com" required /></label><label>Your message<textarea rows="5" placeholder="Tell us what’s on your mind..." required></textarea></label><button class="button button-outline" type="submit">Send a demo message <span>↗</span></button></form></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main section-shell"><div><a class="wordmark footer-wordmark" href="#home">Modèle</a><p>Objects for the everyday.<br />A fictional handbag atelier.</p></div><div class="footer-links"><div><p class="eyebrow">Explore</p><a href="#shop">Shop all</a><a href="#about">Our story</a></div><div><p class="eyebrow">Need help?</p><a href="#contact">Contact us</a><a href="#cart">Your bag</a></div><div><p class="eyebrow">Follow along</p><a href="#contact">Instagram</a><a href="#contact">Pinterest</a></div></div></div>
+      <div class="footer-bottom section-shell"><span>© 2026 Modèle Studio · Design demo</span><span>All content is fictional</span><a href="#home">Back to top ↑</a></div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+    <div class="modal-backdrop" aria-hidden="true"><div class="order-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" type="button" aria-label="Close">×</button><p class="eyebrow">Order received</p><h2 id="modal-title">A beautiful<br /><em>choice.</em></h2><div id="modal-summary"></div><p class="modal-small">This is a visual demo only. No payment has been taken and no WhatsApp message has been sent to +000 000 000.</p><a class="button button-dark wide-button" href="#home">Return to the atelier <span>↗</span></a></div></div>
+    <script src="script.js"></script>
+  </body>
+</html>
